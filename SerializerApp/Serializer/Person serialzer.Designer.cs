@@ -97,6 +97,7 @@
             this.btnPrev.TabIndex = 6;
             this.btnPrev.Text = "Previous";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnNext
             // 
@@ -106,6 +107,7 @@
             this.btnNext.TabIndex = 7;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnSave
             // 
@@ -115,11 +117,12 @@
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblPersonId
             // 
             this.lblPersonId.AutoSize = true;
-            this.lblPersonId.Location = new System.Drawing.Point(26, 166);
+            this.lblPersonId.Location = new System.Drawing.Point(294, 169);
             this.lblPersonId.Name = "lblPersonId";
             this.lblPersonId.Size = new System.Drawing.Size(54, 13);
             this.lblPersonId.TabIndex = 9;
@@ -127,9 +130,10 @@
             // 
             // txtPersonId
             // 
-            this.txtPersonId.Location = new System.Drawing.Point(29, 182);
+            this.txtPersonId.Location = new System.Drawing.Point(354, 166);
             this.txtPersonId.Name = "txtPersonId";
-            this.txtPersonId.Size = new System.Drawing.Size(51, 20);
+            this.txtPersonId.ReadOnly = true;
+            this.txtPersonId.Size = new System.Drawing.Size(18, 20);
             this.txtPersonId.TabIndex = 10;
             // 
             // PersonSerialzer
