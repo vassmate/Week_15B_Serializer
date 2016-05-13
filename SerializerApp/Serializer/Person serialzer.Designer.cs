@@ -39,6 +39,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.lblPersonId = new System.Windows.Forms.Label();
             this.txtPersonId = new System.Windows.Forms.TextBox();
+            this.lblSerialDate = new System.Windows.Forms.Label();
+            this.txtSerialDate = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtName
@@ -122,7 +124,7 @@
             // lblPersonId
             // 
             this.lblPersonId.AutoSize = true;
-            this.lblPersonId.Location = new System.Drawing.Point(294, 169);
+            this.lblPersonId.Location = new System.Drawing.Point(26, 180);
             this.lblPersonId.Name = "lblPersonId";
             this.lblPersonId.Size = new System.Drawing.Size(54, 13);
             this.lblPersonId.TabIndex = 9;
@@ -130,17 +132,36 @@
             // 
             // txtPersonId
             // 
-            this.txtPersonId.Location = new System.Drawing.Point(354, 166);
+            this.txtPersonId.Location = new System.Drawing.Point(86, 177);
             this.txtPersonId.Name = "txtPersonId";
             this.txtPersonId.ReadOnly = true;
             this.txtPersonId.Size = new System.Drawing.Size(18, 20);
             this.txtPersonId.TabIndex = 10;
+            // 
+            // lblSerialDate
+            // 
+            this.lblSerialDate.AutoSize = true;
+            this.lblSerialDate.Location = new System.Drawing.Point(121, 180);
+            this.lblSerialDate.Name = "lblSerialDate";
+            this.lblSerialDate.Size = new System.Drawing.Size(60, 13);
+            this.lblSerialDate.TabIndex = 11;
+            this.lblSerialDate.Text = "Serial. date";
+            // 
+            // txtSerialDate
+            // 
+            this.txtSerialDate.Location = new System.Drawing.Point(187, 177);
+            this.txtSerialDate.Name = "txtSerialDate";
+            this.txtSerialDate.ReadOnly = true;
+            this.txtSerialDate.Size = new System.Drawing.Size(112, 20);
+            this.txtSerialDate.TabIndex = 12;
             // 
             // PersonSerialzer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 261);
+            this.Controls.Add(this.txtSerialDate);
+            this.Controls.Add(this.lblSerialDate);
             this.Controls.Add(this.txtPersonId);
             this.Controls.Add(this.lblPersonId);
             this.Controls.Add(this.btnSave);
@@ -156,6 +177,7 @@
             this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "PersonSerialzer";
             this.Text = "PersonSerialzer";
+            this.Load += new System.EventHandler(this.PersonSerialzer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,6 +196,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblPersonId;
         private System.Windows.Forms.TextBox txtPersonId;
+        private System.Windows.Forms.Label lblSerialDate;
+        private System.Windows.Forms.TextBox txtSerialDate;
     }
 }
 

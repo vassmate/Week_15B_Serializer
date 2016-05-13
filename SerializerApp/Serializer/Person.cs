@@ -8,7 +8,7 @@ namespace Serializer
     {
         private string _name;
         private string _address;
-        private int _phone;
+        private string _phone;
         private DateTime _dateOfRecording = DateTime.Now;
 
         [NonSerialized]
@@ -18,7 +18,7 @@ namespace Serializer
         {
         }
 
-        public Person(string name, string address, int phone)
+        public Person(string name, string address, string phone)
         {
             _name = name;
             _address = address;
@@ -31,7 +31,7 @@ namespace Serializer
             set { _name = value; }
         }
 
-        public int Phone
+        public string Phone
         {
             get { return _phone; }
             set { _phone = value; }
